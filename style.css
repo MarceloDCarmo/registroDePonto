@@ -1,35 +1,74 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    max-width: 100;
     margin: auto;
+    height: 100%;
 }
 
 h1 {
     text-align: center;
+    font-size: 46px;
 }
 
 input {
     font-size: 23px;
 }
 
-.content,
-.resultados {
-    max-width: 500px;
-    margin: auto;  
-    border: 5px;
-    border-style: solid;
-    border-color: black;
+.background {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.separador {
+    height: 49%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.q1, .q2, .q3, .q4 {
+    width: 50%;
+    height: 95%;
+    border: solid 30px black;
+}
+
+.q1 {
+    background-color: orange;
+}
+
+.q2 {
+    background-color: tomato;
+}
+
+.q3 {
+    background-color: skyblue;
+}
+
+.q4 {
+    background-color: seagreen;
+}
+
+.content {
+    position: absolute;
+    height: 70%;
+    width: 26%;
+    z-index: 1;
+    top: 15%;
+    left: 37%;
+    margin: auto;
+    background-color: azure;
+    border: solid 10px black;
     border-radius: 10px;
     text-align: center;
     padding-bottom: 50px;
 }
 
-.content {
-    margin-bottom: 20px;
-}
-
 .horariosForm {
-    font-size: 23px;
+    font-size: 27px;
 }
 
 .horario {
@@ -38,7 +77,7 @@ input {
 
 .horasTrabalhadas,
 .horasExtras {
-    font-size: 23px;
+    font-size: 27px;
 }
 
 .button {

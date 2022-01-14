@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Insira os horários</h1>
+    <div class="background">
+        <div class="separador">
+            <div class="q1"></div>
+            <div class="q2"></div>
+        </div>
+        <div class="separador">
+            <div class="q3"></div>
+            <div class="q4"></div>
+        </div>
+    </div>
     <div class="content">
-        <form id="horariosForm" action="" class="horariosForm">
-            <div class="horario">
-                <p>Entrada</p><input type="time" name="entrada">
-            </div>
-            <div class="horario">
-                <p>Almoço</p><input type="time" name="almoco">
-            </div>
-            <div class="horario">
-                <p>Retorno</p><input type="time" name="retorno">
-            </div>
-            <div class="horario">
-                <p>Saída</p><input type="time" name="saida">
-            </div>
-            <input type="button" onclick="getHorasTrabalhadas()" value="Calcular" class="button">
-        </form>
-    </div>
-
-    <div class="resultados">
-        <div class="horasTrabalhadas">
-            <p>Horas trabalhadas</p>
-            <input type="time" name="horasTrabalhadas" id="horasTrabalhadas" disabled>
+        <h1>Insira os horários</h1>
+        <div>
+            <form id="horariosForm" action="" class="horariosForm">
+                <div class="horario">
+                    <p>Entrada</p><input type="time" name="entrada">
+                </div>
+                <div class="horario">
+                    <p>Almoço</p><input type="time" name="almoco">
+                </div>
+                <div class="horario">
+                    <p>Retorno</p><input type="time" name="retorno">
+                </div>
+                <div class="horario">
+                    <p>Saída</p><input type="time" name="saida">
+                </div>
+                <input type="button" onclick="getHorasTrabalhadas()" value="Calcular" class="button">
+            </form>
         </div>
 
-        <div class="horasExtras">
-            <p>Horas extras</p>
-            <input type="time" name="horasExtras" id="horasExtras" disabled>
+        <div class="resultados">
+            <div class="horasTrabalhadas">
+                <p>Horas trabalhadas</p>
+                <input type="time" name="horasTrabalhadas" id="horasTrabalhadas" disabled>
+            </div>
+
+            <div class="horasExtras">
+                <p>Horas extras</p>
+                <input type="time" name="horasExtras" id="horasExtras" disabled>
+            </div>
         </div>
     </div>
-
 </body>
 
 <script src="index.js"></script>
